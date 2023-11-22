@@ -296,13 +296,14 @@ std::string red_black_tree<T>::to_string() const
     node = nullptr;
     while ((node = next_preorder(node))) {
         ss << "\n\t\t[" << node->uniq_id << "] = {" << "data: " << node->data
+           << ", color: \"" << (node->color == node_color::red ? "red" : "black")  << "\""
            << ", parent: " << node->parent;
         if (node->parent) ss << " ([" << node->parent->uniq_id << "])";
         ss << ", left child: " << node->left_child;
         if (node->left_child) ss << " ([" << node->left_child->uniq_id << "])";
         ss << ", right child: " << node->right_child;
         if (node->right_child) ss << " ([" << node->right_child->uniq_id << "])";
-        ss << ", color: \"" << (node->color == node_color::red ? "red" : "black") << "\"}";
+        ss << "}";
     }
 
     ss << "\n\t]\n}";
