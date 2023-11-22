@@ -3,24 +3,24 @@
 Reprezentacja drzewa dla 12 losowych elementów:
 ```
 {
-	height: 5,
+	height: 4,
 	size: 12,
-	root: 0x55ff24f96f30,
-	values inorder: [  37, 88, 193, 247, 323, 458, 680, 841, 852, 870, 871, 873  ],
-	values preorder: [  680, 88, 37, 323, 247, 193, 458, 870, 852, 841, 873, 871  ],
+	root: 0x55edf691cff0,
+	values inorder: [  110, 212, 366, 450, 553, 558, 654, 705, 807, 847, 879, 883  ],
+	values preorder: [  705, 450, 212, 110, 366, 558, 553, 654, 847, 807, 879, 883  ],
 	nodes: [
-		[2] = {data: 680, parent: 0, left child: 0x55ff24f97030 ([6]), right child: 0x55ff24f96f70 ([3]), color: "red"}
-		[6] = {data: 88, parent: 0x55ff24f96f30 ([2]), left child: 0x55ff24f96ff0 ([5]), right child: 0x55ff24f97070 ([7]), color: "black"}
-		[5] = {data: 37, parent: 0x55ff24f97030 ([6]), left child: 0, right child: 0, color: "black"}
-		[7] = {data: 323, parent: 0x55ff24f97030 ([6]), left child: 0x55ff24f97130 ([10]), right child: 0x55ff24f96eb0 ([0]), color: "red"}
-		[10] = {data: 247, parent: 0x55ff24f97070 ([7]), left child: 0x55ff24f97170 ([11]), right child: 0, color: "black"}
-		[11] = {data: 193, parent: 0x55ff24f97130 ([10]), left child: 0, right child: 0, color: "red"}
-		[0] = {data: 458, parent: 0x55ff24f97070 ([7]), left child: 0, right child: 0, color: "black"}
-		[3] = {data: 870, parent: 0x55ff24f96f30 ([2]), left child: 0x55ff24f96fb0 ([4]), right child: 0x55ff24f96ef0 ([1]), color: "black"}
-		[4] = {data: 852, parent: 0x55ff24f96f70 ([3]), left child: 0x55ff24f970f0 ([9]), right child: 0, color: "black"}
-		[9] = {data: 841, parent: 0x55ff24f96fb0 ([4]), left child: 0, right child: 0, color: "red"}
-		[1] = {data: 873, parent: 0x55ff24f96f70 ([3]), left child: 0x55ff24f970b0 ([8]), right child: 0, color: "black"}
-		[8] = {data: 871, parent: 0x55ff24f96ef0 ([1]), left child: 0, right child: 0, color: "red"}
+		[5] = {data: 705, color: "black", parent: 0, left child: 0x55edf691cfb0 ([4]), right child: 0x55edf691cf30 ([2])}
+		[4] = {data: 450, color: "red", parent: 0x55edf691cff0 ([5]), left child: 0x55edf691d070 ([7]), right child: 0x55edf691d030 ([6])}
+		[7] = {data: 212, color: "black", parent: 0x55edf691cfb0 ([4]), left child: 0x55edf691d170 ([11]), right child: 0x55edf691cef0 ([1])}
+		[11] = {data: 110, color: "red", parent: 0x55edf691d070 ([7]), left child: 0, right child: 0}
+		[1] = {data: 366, color: "red", parent: 0x55edf691d070 ([7]), left child: 0, right child: 0}
+		[6] = {data: 558, color: "black", parent: 0x55edf691cfb0 ([4]), left child: 0x55edf691d130 ([10]), right child: 0x55edf691d0f0 ([9])}
+		[10] = {data: 553, color: "red", parent: 0x55edf691d030 ([6]), left child: 0, right child: 0}
+		[9] = {data: 654, color: "red", parent: 0x55edf691d030 ([6]), left child: 0, right child: 0}
+		[2] = {data: 847, color: "red", parent: 0x55edf691cff0 ([5]), left child: 0x55edf691d0b0 ([8]), right child: 0x55edf691ceb0 ([0])}
+		[8] = {data: 807, color: "black", parent: 0x55edf691cf30 ([2]), left child: 0, right child: 0}
+		[0] = {data: 879, color: "black", parent: 0x55edf691cf30 ([2]), left child: 0, right child: 0x55edf691cf70 ([3])}
+		[3] = {data: 883, color: "red", parent: 0x55edf691ceb0 ([0]), left child: 0, right child: 0}
 	]
 }
 ```
